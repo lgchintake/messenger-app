@@ -1,5 +1,40 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body {
-  margin: 2px;
+.login-container {
+  height: 100vh;
+  width: 100vw;
 }
+.phone-div {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 5px 10px #888888;
+  margin-top: -100px;
+  max-height: 300px;
+}
+
+.login-logo {
+  height: 30px;
+  width: 30px;
+}
+
+.login-top {
+  background-color: #722cfe;
+  color: #fff;
+  min-height: 200px;
+}
+
+.login-bottom {
+  background-color: #120c1e;
+  min-height: calc(100vh - 200px);
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+/* theme color: #722CFE  */
