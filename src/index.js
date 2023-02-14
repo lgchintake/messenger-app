@@ -1,18 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./assets/index.css";
-import {Dashboard} from "./views/Dashboard";
+import PrivateRoutes from "./routes/PrivateRoutes";
+import PublicRoutes from "./routes/PublicRoutes";
 import Login from "./views/Login";
+
+let isLoggedIn = false;
+const loggedInFlag = localStorage.getItem("isLoggedIn");
+
+if (loggedInFlag === "true") {
+  isLoggedIn = true;
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route index element={<Login />} />
+        {isLoggedIn ? (
+          <>
+            <Route path="*" element={<PrivateRoutes />} />
+            <Route index element={<Navigate to="/dashboard" />} />
+          </>
+        ) : (
+          <>
+            <Route path="/*" element={<PublicRoutes />} />
+            <Route index element={<Login />} />
+          </>
+        )}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
