@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import { Dashboard } from "../views/Dashboard";
 import ErrorPage from "../views/ErrorPage";
+import Home from "../views/Home";
 
 const PrivateRoutes = () => (
   <Routes>
-    <Route path="/dashboard" element={<Dashboard />} />
+    <Route path="/home" element={<Home />} />
     <Route path="/*" element={<ErrorPage />} />
   </Routes>
 );

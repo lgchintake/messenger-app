@@ -38,3 +38,92 @@
 }
 
 /* theme color: #722CFE  */
+
+/**************** Home CSS Start ********************/
+.home {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.home-right {
+  border-left: 0.5px solid #978c8c;
+}
+
+.home-left .fa-solid {
+  font-size: 1.5rem;
+}
+.home-left .user-icon .fa-solid {
+  font-size: 1.8rem;
+}
+
+.chat-users ul li {
+  list-style: none;
+}
+
+.chat-users .user-img i {
+  font-size: 3rem;
+}
+
+.chat-users .chat-user .actions-row .fa-chevron-down {
+  visibility: hidden;
+}
+
+.chat-users .chat-user:hover > .row .actions-row .fa-chevron-down {
+  visibility: visible;
+}
+.top-icons-area,
+.chat-search,
+.chat-search .input-group-text,
+.chat-search .form-control,
+.home-right {
+  background-color: #212d33;
+}
+
+.chat-search .input-group-text,
+.chat-search .form-control {
+  border-color: #212d33;
+  color: #dbd2d2;
+}
+
+.chat-search {
+  border-radius: 5px;
+}
+
+.form-control,
+.btn {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.top-icons-area {
+  color: #dbd2d2;
+  padding: 10px 0;
+}
+
+.chat-list {
+  background-color: #121c21;
+}
+
+.search-and-filter .fa-filter {
+  color: #dbd2d2;
+  margin-top: 10px;
+}
+.chat-users {
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+.chat-users .chat-user {
+  color: #fff;
+  padding: 5px 0;
+}
+.chat-users .chat-user .mid,
+.chat-users .chat-user .right {
+  border-top: 1px solid #605959;
+}
+
+.chat-users .chat-ul:hover > li {
+  background-color: #212d33;
+  cursor: pointer;
+}
+
+/**************** Home CSS End ********************/

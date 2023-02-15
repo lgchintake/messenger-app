@@ -26,7 +26,6 @@ const Login = () => {
   const otpChange = (e) => {
     const { value } = e.target;
     if (value.length === 6) {
-      //window.location.href = "/dashboard";
       localStorage.setItem("isLoggedIn", true);
       window.location.reload();
     }
