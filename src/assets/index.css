@@ -47,6 +47,12 @@
 
 .home-right {
   border-left: 0.5px solid #978c8c;
+  color: #fff;
+}
+
+.home-right .no-chat-img {
+  height: 200px;
+  margin-top: 20%;
 }
 
 .home-left .fa-solid {
@@ -126,4 +132,17 @@
   cursor: pointer;
 }
 
+.chat-heading {
+  cursor: pointer;
+}
+
+.vertical-bar {
+  border: 1px solid;
+}
+
+.chat-users .left .chat-user-avatar,
+.home-right .chat-heading img {
+  height: 50px;
+  border-radius: 50% !important;
+}
 /**************** Home CSS End ********************/

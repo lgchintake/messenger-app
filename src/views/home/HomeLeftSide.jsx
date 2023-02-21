@@ -1,7 +1,7 @@
 import ChatUsers from "../../components/ChatUsers";
 import SearchAndFilterComponent from "../../components/SearchAndFilterComponent";
 
-const HomeLeftSide = () => {
+const HomeLeftSide = ({leftSideSelectedChatUser}) => {
   return (
     <div className="col-6 col-lg-4 home-left">
       <div className="row justify-content-end top-icons-area">
@@ -26,7 +26,7 @@ const HomeLeftSide = () => {
           <SearchAndFilterComponent />
         </div>
         <div className="col-12">
-          <ChatUsers />
+          <ChatUsers chatUsersSelectedUser = {leftSideSelectedChatUser} />
         </div>
       </div>
     </div>

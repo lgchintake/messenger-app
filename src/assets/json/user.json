@@ -1,0 +1,62 @@
+[
+  {
+    "userId": 1,
+    "name": "Amelia Eardley",
+    "avatar": "/media/avatar/user1.png",
+    "userType": "group"
+  },
+  {
+    "userId": 2,
+    "name": "Eleni Snodin",
+    "avatar": "/media/avatar/user2.png",
+    "userType": "single"
+  },
+  {
+    "userId": 3,
+    "name": "Montague Kidstone",
+    "avatar": "/media/avatar/user3.png",
+    "userType": "group"
+  },
+  {
+    "userId": 4,
+    "name": "Grete Duckels",
+    "avatar": "/media/avatar/user4.png",
+    "userType": "single"
+  },
+  {
+    "userId": 5,
+    "name": "Laurel Children",
+    "avatar": "/media/avatar/user5.png",
+    "userType": "group"
+  },
+  {
+    "userId": 6,
+    "name": "Zack Van Daalen",
+    "avatar": "/media/avatar/user6.png",
+    "userType": "single"
+  },
+  {
+    "userId": 7,
+    "name": "Helenelizabeth Drewell",
+    "avatar": "/media/avatar/user7.png",
+    "userType": "single"
+  },
+  {
+    "userId": 8,
+    "name": "Olympie Marriage",
+    "avatar": "",
+    "userType": "single"
+  },
+  {
+    "userId": 9,
+    "name": "Eryn Grunnill",
+    "avatar": "/media/avatar/user2.png",
+    "userType": "group"
+  },
+  {
+    "userId": 10,
+    "name": "Shermy Oakman",
+    "avatar": "/media/avatar/user4.png",
+    "userType": "single"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "1": [
+    {
+      "chatId": 1,
+      "chatText": "Hello",
+      "time": "21-02-2023 21:54:00",
+      "user": {
+        "userId": 2,
+        "name": "Eleni Snodin",
+        "avatar": "/media/avatar/user2.png",
+        "userType": "single"
+      }
+    },
+    {
+      "chatId": 2,
+      "chatText": "How are you?",
+      "time": "21-02-2023 21:55:00",
+      "user": {
+        "userId": 4,
+        "name": "Grete Duckels",
+        "avatar": "/media/avatar/user4.png",
+        "userType": "single"
+      }
+    }
+  ]
+}
