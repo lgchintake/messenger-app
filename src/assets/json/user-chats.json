@@ -1,26 +1,25 @@
 {
-  "1": [
-    {
-      "chatId": 1,
-      "chatText": "Hello",
-      "time": "21-02-2023 21:54:00",
-      "user": {
-        "userId": 2,
-        "name": "Eleni Snodin",
-        "avatar": "/media/avatar/user2.png",
-        "userType": "single"
+  "6": {
+    "to": 100,
+    "userType": "single",
+    "userId": 6,
+    "name": "Zack Van Daalen",
+    "avatar": "/media/avatar/user6.png",
+    "chats": [
+      {
+        "chatId": 1,
+        "from": 6,
+        "chatText": "Hello",
+        "time": "2017-08-30T14:24:03",
+        "chatType": "receive"
+      },
+      {
+        "chatId": 2,
+        "from": 6,
+        "chatText": "How are you?",
+        "time": "2017-08-30T14:24:03",
+        "chatType": "receive"
       }
-    },
-    {
-      "chatId": 2,
-      "chatText": "How are you?",
-      "time": "21-02-2023 21:55:00",
-      "user": {
-        "userId": 4,
-        "name": "Grete Duckels",
-        "avatar": "/media/avatar/user4.png",
-        "userType": "single"
-      }
-    }
-  ]
+    ]
+  }
 }

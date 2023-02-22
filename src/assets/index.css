@@ -81,7 +81,9 @@
 .chat-search,
 .chat-search .input-group-text,
 .chat-search .form-control,
-.home-right {
+.home-right,
+.chat-text-bottom,
+.individual-chat .actual-chat {
   background-color: #212d33;
 }
 
@@ -106,7 +108,8 @@
   padding: 10px 0;
 }
 
-.chat-list {
+.chat-list,
+.chat-box {
   background-color: #121c21;
 }
 
@@ -144,5 +147,29 @@
 .home-right .chat-heading img {
   height: 50px;
   border-radius: 50% !important;
+}
+
+.chat-box {
+  min-height: calc(100vh - 120px);
+}
+
+.chat-text-bottom .fa-face-smile,
+.chat-text-bottom .fa-paperclip,
+.chat-text-bottom .fa-microphone,
+.chat-text-bottom .fa-paper-plane {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.chat-text-bottom .fa-paper-plane {
+  transform: rotate(45deg);
+}
+
+.chat-text-bottom input[type="text"] {
+  max-width: 90%;
+  display: inline;
+}
+
+.individual-chat .actual-chat {
+  border: 1px solid red;
 }
 /**************** Home CSS End ********************/

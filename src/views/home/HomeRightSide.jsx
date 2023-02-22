@@ -1,45 +1,14 @@
+import { useState } from "react";
 import ChatCard from "../../components/ChatCard";
 
 const HomeRightSide = ({ chatData }) => {
-  console.log({ chatData });
-
-  const chats = [
-    {
-      chatId: 1,
-      name: "Chandrakant Patil Engale",
-      message: "OK",
-      time: "21-02-2023 21:54:00",
-    },
-    {
-      chatId: 2,
-      name: "Chandrakant Patil Engale",
-      message: "OK",
-      time: "21-02-2023 21:54:00",
-    },
-    {
-      chatId: 3,
-      name: "Chandrakant Patil Engale",
-      message: "OK",
-      time: "21-02-2023 21:54:00",
-    },
-    {
-      chatId: 4,
-      name: "Chandrakant Patil Engale",
-      message: "OK",
-      time: "21-02-2023 21:54:00",
-    },
-    {
-      chatId: 5,
-      name: "Chandrakant Patil Engale",
-      message: "OK",
-      time: "21-02-2023 21:54:00",
-    },
-  ];
+  const [chatMessage, setChatMessage] = useState("");
+  console.log(chatData)
   return (
     <>
       {chatData?.userId ? (
         <div className="col home-right">
-          <div className="row mt-3">
+          <div className="row pt-3 pb-2">
             <div className="col-9 chat-heading">
               {chatData.avatar !== "" ? (
                 <>
@@ -56,16 +25,32 @@ const HomeRightSide = ({ chatData }) => {
               <i className="fa-solid fa-chevron-down ms-5"></i>
             </div>
           </div>
-          <div className="row">
+          <div className="row chat-box">
             <div className="row">
-              <div className="col-1">
-                <i className="fa-solid fa-user-tie"></i>
-              </div>
-              <div className="col-11">
-                {chats.map((chat) => (
+              <div className="col-12">
+                {chatData.chats.map((chat) => (
                   <ChatCard key={chat.chatId} data={chat} />
                 ))}
               </div>
+            </div>
+          </div>
+          <div className="row chat-text-bottom">
+            <div className="col mt-2">
+              <i className="fa-regular fa-face-smile"></i>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i className="fa-solid fa-paperclip"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+              <input
+                type="text"
+                onChange={(e) => setChatMessage(e.target.value)}
+                className="form-control"
+              />
+            </div>
+            <div className="col-1 mt-2">
+              {chatMessage !== "" ? (
+                <i className="fa-solid fa-paper-plane"></i>
+              ) : (
+                <i className="fa-solid fa-microphone"></i>
+              )}
             </div>
           </div>
         </div>
