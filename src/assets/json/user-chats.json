@@ -19,6 +19,20 @@
         "chatText": "How are you?",
         "time": "2017-08-30T14:24:03",
         "chatType": "receive"
+      },
+      {
+        "chatId": 3,
+        "to": 6,
+        "chatText": "Welcome, buddy!",
+        "time": "2017-08-30T14:24:03",
+        "chatType": "send"
+      },
+      {
+        "chatId": 4,
+        "from": 6,
+        "chatText": "Thanks for the welcome!",
+        "time": "2017-08-30T14:24:03",
+        "chatType": "receive"
       }
     ]
   }

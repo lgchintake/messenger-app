@@ -83,7 +83,8 @@
 .chat-search .form-control,
 .home-right,
 .chat-text-bottom,
-.individual-chat .actual-chat {
+.individual-chat .actual-chat,
+.contact-info-header {
   background-color: #212d33;
 }
 
@@ -118,7 +119,7 @@
   margin-top: 10px;
 }
 .chat-users {
-  max-height: calc(100vh - 100px);
+  max-height: 100vh;
   overflow-y: scroll;
 }
 .chat-users .chat-user {
@@ -135,7 +136,8 @@
   cursor: pointer;
 }
 
-.chat-heading {
+.chat-heading,
+.fa-xmark {
   cursor: pointer;
 }
 
@@ -169,7 +171,25 @@
   display: inline;
 }
 
-.individual-chat .actual-chat {
-  border: 1px solid red;
+.actual-chat {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.chat-card .justify-content-end .actual-chat {
+  text-align: end;
+}
+.contact-info{
+  border-left: 1px solid #fff;
+  color: #fff;
+  background-color: #121c20;
+}
+
+.contact-info-img{
+  border-radius: 50% !important;
+}
+
+.contact-info-name{
+  font-size: 2rem;
 }
 /**************** Home CSS End ********************/
